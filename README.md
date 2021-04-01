@@ -19,4 +19,4 @@ https://www.getpostman.com/collections/9ccec6fe67d55bbf06ae
 
 ### Documentation swagger
 
-Commenter les lignes 26 et 32 dans api.php pour désactiver l'authentification et  tester avec la doc swagger.
+Commenter les lignes 26 et 32 du fichier api.php pour désactiver l'authentification et  tester avec la doc swagger.

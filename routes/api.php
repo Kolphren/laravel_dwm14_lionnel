@@ -23,13 +23,13 @@ Route::post('register', [RegisterController::class, 'register']);
 Route::post('login', [RegisterController::class, 'login']);
 
 
-//Route::middleware('auth:api')->group(function () {
+Route::middleware('auth:api')->group(function () {
     Route::get('books/search', [BookController::class, 'search']);
     Route::get('authors/search', [AuthorController::class, 'search']);
     Route::resource('authors', AuthorController::class);
     Route::resource('books', BookController::class);
     Route::resource('genres', GenreController::class);
-//});
+});
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
